@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour
 	// Create a public method that reduces hitpoints by the amount of damage
 	public void TakeDamage(float damage)
 	{
+		// GetComponent<EnemyAI>().OnDamageTaken(); // Alternative to BroadCastMessage() Can be conflicts
+		BroadcastMessage("OnDamageTaken");
 		hitpoints = hitpoints - damage;
 		if (hitpoints <= 0)
 		{

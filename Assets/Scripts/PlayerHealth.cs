@@ -12,6 +12,8 @@ public class PlayerHealth : MonoBehaviour
 		if (playerDamage <= 0)
 		{
 			Debug.Log("You are DEAD, Looser");
+			DeathHandler deathHandler = GetComponent<DeathHandler>();
+			deathHandler.HandleDeath();
 		}
 	}
 }
