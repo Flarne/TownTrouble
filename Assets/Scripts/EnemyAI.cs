@@ -12,7 +12,7 @@ public class EnemyAI : MonoBehaviour
 	NavMeshAgent navMeshAgent;
 	float distanceToTarget = Mathf.Infinity;
 
-	bool isProvoked = false;
+	public bool isProvoked = false;
 	
     void Start()
     {
@@ -42,17 +42,21 @@ public class EnemyAI : MonoBehaviour
 
 		if (distanceToTarget <= navMeshAgent.stoppingDistance)
 		{
+			Debug.Log("testing");
 			AttackTarget();
 		}
 	}
 
 	private void ChaseTarget()
 	{
+		GetComponent<Animator>().SetBool("attack", false);
+		GetComponent<Animator>().SetTrigger("move");
 		navMeshAgent.SetDestination(target.position);
 	}
 
 	private void AttackTarget()
 	{
+		GetComponent<Animator>().SetBool("attack", true);
 		Debug.Log(name + " Is trying to kill " + target.name);
 	}
 
