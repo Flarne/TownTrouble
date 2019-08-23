@@ -342,7 +342,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af3d78b63159a7e4faf15ce5fa141c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammotype: 0
+    ammoAmount: 100
+  - ammotype: 1
+    ammoAmount: 10
+  - ammotype: 2
+    ammoAmount: 20
 --- !u!1001 &5863790102727010668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -425,6 +431,26 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 6270082912634982011}
+    - target: {fileID: 7823420522076511949, guid: 359ff8e80f29e12499d18ed1e418e3b9,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 2000000}
+    - target: {fileID: 7823420522076511949, guid: 359ff8e80f29e12499d18ed1e418e3b9,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 11400004}
+    - target: {fileID: 3794508771955551655, guid: 359ff8e80f29e12499d18ed1e418e3b9,
+        type: 3}
+      propertyPath: fpCamera
+      value: 
+      objectReference: {fileID: 2000000}
+    - target: {fileID: 3794508771955551655, guid: 359ff8e80f29e12499d18ed1e418e3b9,
+        type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 6270082912634982011}
     - target: {fileID: 2391866854493807000, guid: 359ff8e80f29e12499d18ed1e418e3b9,
         type: 3}
       propertyPath: m_IsActive
@@ -450,26 +476,6 @@ PrefabInstance:
       propertyPath: shootRange
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 3794508771955551655, guid: 359ff8e80f29e12499d18ed1e418e3b9,
-        type: 3}
-      propertyPath: fpCamera
-      value: 
-      objectReference: {fileID: 2000000}
-    - target: {fileID: 3794508771955551655, guid: 359ff8e80f29e12499d18ed1e418e3b9,
-        type: 3}
-      propertyPath: ammoSlot
-      value: 
-      objectReference: {fileID: 6270082912634982011}
-    - target: {fileID: 7823420522076511949, guid: 359ff8e80f29e12499d18ed1e418e3b9,
-        type: 3}
-      propertyPath: fpsCamera
-      value: 
-      objectReference: {fileID: 2000000}
-    - target: {fileID: 7823420522076511949, guid: 359ff8e80f29e12499d18ed1e418e3b9,
-        type: 3}
-      propertyPath: fpsController
-      value: 
-      objectReference: {fileID: 11400004}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 359ff8e80f29e12499d18ed1e418e3b9, type: 3}
 --- !u!4 &4759656734138784168 stripped

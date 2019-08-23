@@ -11,10 +11,14 @@ public class Weapon : MonoBehaviour
 	[SerializeField] ParticleSystem muzzleFX;
 	[SerializeField] GameObject impactHitFX;
 	[SerializeField] Ammo ammoSlot;
+	[SerializeField] AmmoType ammoType;
 	[SerializeField] float timeBetweenShoots = 0.5f;
 
 	bool canShoot = true;
 
+	// ToDo fix these bugs later
+	// This is just a fast easy bugfix but makes other bugs that must be fixed
+	// Player can shoot one shot and then switch to another gun for insta shot
 	private void OnEnable()
 	{
 		canShoot = true;
@@ -30,11 +34,11 @@ public class Weapon : MonoBehaviour
 
 	IEnumerator Shoot()
 	{
-		if (ammoSlot.CurrentAmountAmmo() > 0 && canShoot == true)
+		if (ammoSlot.CurrentAmountAmmo(ammoType) > 0 && canShoot == true)
 		{
 			PlayMuzzleFX();
 			ProcessRaycast();
-			ammoSlot.AmmoDecrease();
+			ammoSlot.AmmoDecrease(ammoType);
 			canShoot = false;
 			yield return new WaitForSeconds(timeBetweenShoots);
 			canShoot = true;

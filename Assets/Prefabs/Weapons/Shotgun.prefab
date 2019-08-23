@@ -275,6 +275,7 @@ MonoBehaviour:
   impactHitFX: {fileID: 658029776378026284, guid: 0882a1a8deb0f224daf03775bee13ac0,
     type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 1
   timeBetweenShoots: 3
 --- !u!1001 &7321851344030444706
 PrefabInstance:

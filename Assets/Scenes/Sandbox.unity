@@ -4326,8 +4326,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6270082912634982011, guid: c6453f8e1f814744d8b94e5a6d1f9942,
         type: 3}
+      propertyPath: ammoSlots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270082912634982011, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
       propertyPath: ammoAmount
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270082912634982011, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammotype
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6270082912634982011, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammotype
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: far clip plane
