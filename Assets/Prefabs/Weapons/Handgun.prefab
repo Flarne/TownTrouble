@@ -276,7 +276,7 @@ MonoBehaviour:
   impactHitFX: {fileID: 658029776378026284, guid: 0882a1a8deb0f224daf03775bee13ac0,
     type: 3}
   ammoSlot: {fileID: 0}
-  timeBetweenShoots: 0.5
+  timeBetweenShoots: 0.2
 --- !u!1 &6664003926772321688
 GameObject:
   m_ObjectHideFlags: 0
