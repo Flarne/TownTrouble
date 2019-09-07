@@ -13,15 +13,28 @@ public class EnemyAI : MonoBehaviour
 	NavMeshAgent navMeshAgent;
 	float distanceToTarget = Mathf.Infinity;
 
+	EnemyHealth enemyHealth;
+
 	public bool isProvoked = false;
+	bool isDead = false;
 	
     void Start()
-    {
+	{
 		navMeshAgent = GetComponent<NavMeshAgent>();
-    }
+		enemyHealth = GetComponent<EnemyHealth>();
+	}
 	
     void Update()
 	{
+		// When Zombie is dead turn off movement and nav seeking and jumps over code below in Update
+		if (enemyHealth.IsDead())
+		{
+			enabled = false;
+			navMeshAgent.enabled = false;
+			isDead = true;
+		}
+
+		// If Zombie is provoked he starts to chase you or else when you get to close to the zombie
 		distanceToTarget = Vector3.Distance(target.position, transform.position);
 
 		if (isProvoked)
@@ -55,11 +68,13 @@ public class EnemyAI : MonoBehaviour
 
 	private void ChaseTarget()
 	{
+		if (isDead) return;
 		GetComponent<Animator>().SetBool("attack", false);
 		GetComponent<Animator>().SetTrigger("move");
 		navMeshAgent.SetDestination(target.position);
 	}
 
+	// When zombie is close enough animation starts to hit you
 	private void AttackTarget()
 	{
 		GetComponent<Animator>().SetBool("attack", true);

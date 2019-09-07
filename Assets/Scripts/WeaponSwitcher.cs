@@ -6,6 +6,7 @@ using UnityEngine;
 public class WeaponSwitcher : MonoBehaviour
 {
 	[SerializeField] int currentWeapon = 0;
+	public static float shootTimer;
 
     void Start()
     {
@@ -81,6 +82,8 @@ public class WeaponSwitcher : MonoBehaviour
 			if (weaponIndex == currentWeapon)
 			{
 				weapon.gameObject.SetActive(true);
+				shootTimer = Weapon.shootTimer;
+				//Debug.Log(shootTimer);
 			}
 			else if (weaponIndex != currentWeapon)
 			{

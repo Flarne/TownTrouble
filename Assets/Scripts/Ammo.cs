@@ -23,11 +23,11 @@ public class Ammo : MonoBehaviour
 		GetAmmoSlot(ammoType).ammoAmount--;
 	}
 
-	//public void AmmoIncrease(AmmoType ammoType, int myAmmo)
-	//{
-	//	Debug.Log("Test");
-	//	GetAmmoSlot(ammoType).ammoAmount = GetAmmoSlot(ammoType).ammoAmount + myAmmo;
-	//}
+	// In here we get Value from AmmoPickup and add to get more ammo for that ammo you picked up
+	public void AmmoPickup(AmmoType ammoType, int ammoAmount)
+	{
+		GetAmmoSlot(ammoType).ammoAmount += ammoAmount;
+	}
 
 	private AmmoSlot GetAmmoSlot(AmmoType ammoType)
 	{

@@ -15,6 +15,7 @@ public class Weapon : MonoBehaviour
 	[SerializeField] float timeBetweenShoots = 0.5f;
 
 	bool canShoot = true;
+	public static float shootTimer;
 
 	// ToDo fix these bugs later
 	// This is just a fast easy bugfix but makes other bugs that must be fixed
@@ -28,19 +29,21 @@ public class Weapon : MonoBehaviour
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
+			shootTimer = timeBetweenShoots;
 			StartCoroutine(Shoot());
 		}
 	}
 
-	IEnumerator Shoot()
+	public IEnumerator Shoot()
 	{
 		if (ammoSlot.CurrentAmountAmmo(ammoType) > 0 && canShoot == true)
 		{
+			Debug.Log(shootTimer);
 			PlayMuzzleFX();
 			ProcessRaycast();
 			ammoSlot.AmmoDecrease(ammoType);
 			canShoot = false;
-			yield return new WaitForSeconds(timeBetweenShoots);
+			yield return new WaitForSeconds(shootTimer);
 			canShoot = true;
 		}
 	}
