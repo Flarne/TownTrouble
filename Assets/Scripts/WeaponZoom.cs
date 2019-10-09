@@ -14,10 +14,11 @@ public class WeaponZoom : MonoBehaviour
 
 	bool zoomedInToggle = false;
 
-	void OnDisable()
-	{
-		ZoomIn();
-	}
+	// Find another way to solve zoom bug
+	//void OnDisable()
+	//{
+	//	ZoomIn();
+	//}
 
 	private void Update()
     {
@@ -37,10 +38,17 @@ public class WeaponZoom : MonoBehaviour
 
 	private void ZoomIn()
 	{
-		zoomedInToggle = true;
-		fpsCamera.fieldOfView = zoomIn;
-		fpsController.mouseLook.XSensitivity = mouseZoomIn;
-		fpsController.mouseLook.YSensitivity = mouseZoomIn;
+		if (Input.GetAxis("Mouse ScrollWheel") < 0 || Input.GetAxis("Mouse ScrollWheel") > 0)
+		{
+			return;
+		}
+		else
+		{
+			zoomedInToggle = true;
+			fpsCamera.fieldOfView = zoomIn;
+			fpsController.mouseLook.XSensitivity = mouseZoomIn;
+			fpsController.mouseLook.YSensitivity = mouseZoomIn;
+		}
 	}
 
 	private void ZoomOut()

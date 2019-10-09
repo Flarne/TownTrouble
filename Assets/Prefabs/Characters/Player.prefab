@@ -249,9 +249,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 2000000}
   movementSettings:
-    ForwardSpeed: 8
-    BackwardSpeed: 4
-    StrafeSpeed: 4
+    ForwardSpeed: 10
+    BackwardSpeed: 6
+    StrafeSpeed: 6
     RunMultiplier: 2
     RunKey: 304
     JumpForce: 50
@@ -441,6 +441,11 @@ PrefabInstance:
       propertyPath: fpsController
       value: 
       objectReference: {fileID: 11400004}
+    - target: {fileID: 7823420522076511949, guid: 359ff8e80f29e12499d18ed1e418e3b9,
+        type: 3}
+      propertyPath: mouseZoomOut
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3794508771955551655, guid: 359ff8e80f29e12499d18ed1e418e3b9,
         type: 3}
       propertyPath: fpCamera
