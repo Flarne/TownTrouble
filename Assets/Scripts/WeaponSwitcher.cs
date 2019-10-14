@@ -10,6 +10,7 @@ public class WeaponSwitcher : MonoBehaviour
 
     void Start()
     {
+		WeaponZoom.zoomedInToggle = true;
 		SetActiveWeapon();
 	}
 
@@ -77,19 +78,22 @@ public class WeaponSwitcher : MonoBehaviour
 	{
 		int weaponIndex = 0;
 
-		foreach (Transform weapon in transform)
+		if (Weapon.canShoot == true && WeaponZoom.zoomedInToggle == true)
 		{
-			if (weaponIndex == currentWeapon)
+			foreach (Transform weapon in transform)
 			{
-				weapon.gameObject.SetActive(true);
-				shootTimer = Weapon.shootTimer;
-				//Debug.Log(shootTimer);
+				if (weaponIndex == currentWeapon)
+				{
+					weapon.gameObject.SetActive(true);
+					shootTimer = Weapon.shootTimer;
+					//Debug.Log(shootTimer);
+				}
+				else if (weaponIndex != currentWeapon)
+				{
+					weapon.gameObject.SetActive(false);
+				}
+				weaponIndex++;
 			}
-			else if (weaponIndex != currentWeapon)
-			{
-				weapon.gameObject.SetActive(false);
-			}
-			weaponIndex++;
 		}
 	}
 }

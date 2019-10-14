@@ -14,16 +14,16 @@ public class Weapon : MonoBehaviour
 	[SerializeField] AmmoType ammoType;
 	[SerializeField] float timeBetweenShoots = 0.5f;
 
-	bool canShoot = true;
+	public static bool canShoot = true;
 	public static float shootTimer;
 
 	// ToDo fix these bugs later
 	// This is just a fast easy bugfix but makes other bugs that must be fixed
 	// Player can shoot one shot and then switch to another gun for insta shot
-	private void OnEnable()
-	{
-		canShoot = true;
-	}
+	//private void OnEnable()
+	//{
+	//	canShoot = true;
+	//}
 
 	void Update()
 	{

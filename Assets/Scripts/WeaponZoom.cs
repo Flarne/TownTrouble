@@ -9,12 +9,12 @@ public class WeaponZoom : MonoBehaviour
 	[SerializeField] RigidbodyFirstPersonController fpsController;
 	[SerializeField] float zoomIn = 60f;
 	[SerializeField] float zoomOut = 20f;
-	[SerializeField] float mouseZoomOut = 2f;
-	[SerializeField] float mouseZoomIn = 0.5f;
+	[SerializeField] float mouseZoomOut = 3f;
+	[SerializeField] float mouseZoomIn = 2f;
 
-	bool zoomedInToggle = false;
+	public static bool zoomedInToggle = false;
 
-	// Find another way to solve zoom bug
+	//Find another way to solve zoom bug
 	//void OnDisable()
 	//{
 	//	ZoomIn();
@@ -28,10 +28,12 @@ public class WeaponZoom : MonoBehaviour
 			if (zoomedInToggle == false)
 			{
 				ZoomIn();
+				Debug.Log(mouseZoomIn);
 			}
 			else
 			{
 				ZoomOut();
+				Debug.Log(mouseZoomOut);
 			}
 		}
     }
