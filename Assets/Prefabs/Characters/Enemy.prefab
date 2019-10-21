@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fbd0de5ba02b647aadca070ea2032b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 4445792185410646141, guid: b4ae0dde37ad66842a7c3c2b46f33a26, type: 3}
+  target: {fileID: 0}
   chaseRange: 10
   turnSpeed: 5
   isProvoked: 0
@@ -162,7 +162,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706110157794891453}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: fe2eb0b4e90413643a3ddc78c368140f, type: 3}
   m_Controller: {fileID: 9100000, guid: 41b7edf1f6f1d3541aba0561e97392f1, type: 2}
   m_CullingMode: 0
