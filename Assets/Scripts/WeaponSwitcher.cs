@@ -2,14 +2,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class WeaponSwitcher : MonoBehaviour
 {
 	[SerializeField] int currentWeapon = 0;
+	[SerializeField] Ammo ammoSlot;
+	[SerializeField] AmmoType ammoType;
+
+	public TextMeshProUGUI amountAmmunitionText;
+
 	public static float shootTimer;
 
     void Start()
-    {
+	{
+		amountAmmunitionText.text = ammoSlot.CurrentAmountAmmo(ammoType).ToString();
 		WeaponZoom.zoomedInToggle = true;
 		SetActiveWeapon();
 	}
@@ -72,6 +80,8 @@ public class WeaponSwitcher : MonoBehaviour
 				currentWeapon--;
 			}
 		}
+		//amountAmmunitionText.text = ammoSlot.CurrentAmountAmmo(ammoType).ToString();
+		//Debug.Log(ammoSlot.CurrentAmountAmmo(ammoType) + " and " + currentWeapon);
 	}
 
 	private void SetActiveWeapon()
@@ -86,7 +96,6 @@ public class WeaponSwitcher : MonoBehaviour
 				{
 					weapon.gameObject.SetActive(true);
 					shootTimer = Weapon.shootTimer;
-					//Debug.Log(shootTimer);
 				}
 				else if (weaponIndex != currentWeapon)
 				{

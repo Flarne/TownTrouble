@@ -17,14 +17,6 @@ public class Weapon : MonoBehaviour
 	public static bool canShoot = true;
 	public static float shootTimer;
 
-	// ToDo fix these bugs later
-	// This is just a fast easy bugfix but makes other bugs that must be fixed
-	// Player can shoot one shot and then switch to another gun for insta shot
-	//private void OnEnable()
-	//{
-	//	canShoot = true;
-	//}
-
 	void Update()
 	{
 		if (Input.GetMouseButtonDown(0))
@@ -38,7 +30,7 @@ public class Weapon : MonoBehaviour
 	{
 		if (ammoSlot.CurrentAmountAmmo(ammoType) > 0 && canShoot == true)
 		{
-			Debug.Log(shootTimer);
+			//Debug.Log(shootTimer);
 			PlayMuzzleFX();
 			ProcessRaycast();
 			ammoSlot.AmmoDecrease(ammoType);

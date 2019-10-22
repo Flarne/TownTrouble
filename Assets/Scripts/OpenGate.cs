@@ -5,32 +5,36 @@ using UnityEngine;
 
 public class OpenGate : MonoBehaviour
 {
+	[SerializeField] Animator openGate;
+
 	public bool enter = true;
 	public bool exit = true;
 	float smooth = 5.0f;
 
-	private void Awake()
+	private void Start()
 	{
-		//Quaternion gateTarget = Quaternion.Euler(0.0f, 90.0f, 0.0f);
-		//transform.rotation = Quaternion.Slerp(transform.rotation, gateTarget, Time.deltaTime * smooth);
+		openGate.enabled = false;
 	}
 
-	//private void Update()
-	//{
-	//	OpeningGate();
-	//}
+	private void Update()
+	{
+		OpeningGate();
+	}
 
-	//private void OpeningGate()
-	//{
+	private void OpeningGate()
+	{
 		
-	//}
+	}
 
 	private void OnTriggerEnter(Collider other)
 	{
 		if (enter)
 		{
+			openGate.enabled = true;
 			Debug.Log("entered");
-			GetComponent<Animator>().SetBool("Opening", true);
+			GetComponent<Animator>().SetTrigger("opening");
+			GetComponent<Animator>().SetBool("idleClosed", false);
+			GetComponent<Animator>().SetBool("idleOpened", true);
 		}
 	}
 
@@ -39,6 +43,7 @@ public class OpenGate : MonoBehaviour
 		if (exit)
 		{
 			Debug.Log("Exited");
+			openGate.enabled = false;
 		}
 	}
 }
