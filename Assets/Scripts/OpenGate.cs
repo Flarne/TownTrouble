@@ -16,16 +16,6 @@ public class OpenGate : MonoBehaviour
 		openGate.enabled = false;
 	}
 
-	private void Update()
-	{
-		OpeningGate();
-	}
-
-	private void OpeningGate()
-	{
-		
-	}
-
 	private void OnTriggerEnter(Collider other)
 	{
 		if (enter)

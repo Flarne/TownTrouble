@@ -30,7 +30,6 @@ public class Weapon : MonoBehaviour
 	{
 		if (ammoSlot.CurrentAmountAmmo(ammoType) > 0 && canShoot == true)
 		{
-			//Debug.Log(shootTimer);
 			PlayMuzzleFX();
 			ProcessRaycast();
 			ammoSlot.AmmoDecrease(ammoType);

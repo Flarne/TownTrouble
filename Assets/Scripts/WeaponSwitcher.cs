@@ -80,8 +80,6 @@ public class WeaponSwitcher : MonoBehaviour
 				currentWeapon--;
 			}
 		}
-		//amountAmmunitionText.text = ammoSlot.CurrentAmountAmmo(ammoType).ToString();
-		//Debug.Log(ammoSlot.CurrentAmountAmmo(ammoType) + " and " + currentWeapon);
 	}
 
 	private void SetActiveWeapon()

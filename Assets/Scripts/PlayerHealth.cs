@@ -20,7 +20,6 @@ public class PlayerHealth : MonoBehaviour
 		healthText.text = playerDamage.ToString();
 		if (playerDamage <= 0)
 		{
-			Debug.Log("You are DEAD, Looser");
 			DeathHandler deathHandler = GetComponent<DeathHandler>();
 			deathHandler.HandleDeath();
 		}

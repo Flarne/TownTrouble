@@ -25,7 +25,6 @@ public class Ammo : MonoBehaviour
 	public void AmmoDecrease(AmmoType ammoType)
 	{
 		GetAmmoSlot(ammoType).ammoAmount--;
-		Debug.Log(ammoType + " and " + GetAmmoSlot(ammoType).ammoAmount);
 		amountAmmunitionText.text = CurrentAmountAmmo(ammoType).ToString();
 	}
 
@@ -33,7 +32,6 @@ public class Ammo : MonoBehaviour
 	public void AmmoPickup(AmmoType ammoType, int ammoAmount)
 	{
 		GetAmmoSlot(ammoType).ammoAmount += ammoAmount;
-		//Debug.Log(ammoType + " and " + ammoAmount);
 	}
 
 	private AmmoSlot GetAmmoSlot(AmmoType ammoType)
@@ -42,7 +40,6 @@ public class Ammo : MonoBehaviour
 		{
 			if (slot.ammotype == ammoType)
 			{
-				//Debug.Log(slot);
 				return slot;
 			}
 		}

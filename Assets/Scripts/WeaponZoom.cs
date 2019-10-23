@@ -14,12 +14,6 @@ public class WeaponZoom : MonoBehaviour
 
 	public static bool zoomedInToggle = false;
 
-	//Find another way to solve zoom bug
-	//void OnDisable()
-	//{
-	//	ZoomIn();
-	//}
-
 	private void Update()
     {
 
@@ -28,12 +22,10 @@ public class WeaponZoom : MonoBehaviour
 			if (zoomedInToggle == false)
 			{
 				ZoomIn();
-				Debug.Log(mouseZoomIn);
 			}
 			else
 			{
 				ZoomOut();
-				Debug.Log(mouseZoomOut);
 			}
 		}
     }
