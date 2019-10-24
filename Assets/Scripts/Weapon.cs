@@ -7,7 +7,9 @@ public class Weapon : MonoBehaviour
 {
 	[SerializeField] Camera fpCamera;
 	[SerializeField] float shootRange = 100f;
-	[SerializeField] float damage = 10f;
+	[SerializeField] int damage = 10;
+	[SerializeField] int minDamage = 10;
+	[SerializeField] int maxDamage = 10;
 	[SerializeField] ParticleSystem muzzleFX;
 	[SerializeField] GameObject impactHitFX;
 	[SerializeField] Ammo ammoSlot;
@@ -16,6 +18,11 @@ public class Weapon : MonoBehaviour
 
 	public static bool canShoot = true;
 	public static float shootTimer;
+
+	private void Start()
+	{
+		damage = UnityEngine.Random.Range(minDamage, maxDamage);
+	}
 
 	void Update()
 	{
@@ -55,7 +62,9 @@ public class Weapon : MonoBehaviour
 			{
 				return;
 			}
+			damage = UnityEngine.Random.Range(minDamage, maxDamage);
 			target.TakeDamage(damage); // Call a method from EnemyHealth That decrease health
+			Debug.Log(damage);
 		}
 		else
 		{

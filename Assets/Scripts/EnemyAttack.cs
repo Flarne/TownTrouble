@@ -5,20 +5,25 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
 	PlayerHealth target;
-	[SerializeField] float damage = 30f;
+	[SerializeField] int damage = 10;
+	[SerializeField] int minDamage;
+	[SerializeField] int maxDamage;
 
 
-    void Start()
+	void Start()
     {
 		target = FindObjectOfType<PlayerHealth>();
+		damage = Random.Range(minDamage, maxDamage);
     }
 
 	public void AttackHitEvent()
 	{
+		damage = Random.Range(minDamage, maxDamage);
 		if (target == null)
 		{
 			return;
 		}
 		target.PlayerTakeDamage(damage);
+		Debug.Log(damage);
 	}
 }

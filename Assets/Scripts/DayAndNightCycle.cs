@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class DayAndNightCycle : MonoBehaviour
 {
+
 	public Light sun;
-	public float secondsInFullDay = 120f;
+	public float secondsInFullDay = 10f;
 	[Range(0, 1)]
-	public float currentTimeOfDay = 0;
+	public static float currentTimeOfDay = 0;
 	[HideInInspector]
 	public float timeMultiplier = 1f;
 
 	float sunInitialIntensity;
+
+	public static bool streetLightOnOff = true;
 
 	void Start()
 	{
@@ -49,5 +52,35 @@ public class DayAndNightCycle : MonoBehaviour
 		}
 
 		sun.intensity = sunInitialIntensity * intensityMultiplier;
+		
+			if (intensityMultiplier == 1)
+			{
+				streetLightOnOff = false;
+				Debug.Log(streetLightOnOff + " av");
+			}
+			else if (intensityMultiplier < 1)
+			{
+				streetLightOnOff = true;
+				Debug.Log(streetLightOnOff + " på");
+			}
 	}
+
+	//public void NightOrDayLights()
+	//{
+	//		//if (DayAndNightCycle.currentTimeOfDay <= 0.27f || DayAndNightCycle.currentTimeOfDay >= 0.73f)
+	//		//{
+	//		if (streetLightOnOff == true)
+	//		{
+	//			Debug.Log("ja");
+	//			toggleStreetLights.gameObject.SetActive(true);
+	//		}
+	//		//}
+	//		//else if (DayAndNightCycle.currentTimeOfDay > 0.27f || DayAndNightCycle.currentTimeOfDay < 0.73f)
+	//		//{
+	//		else if (streetLightOnOff == false)
+	//		{
+	//			Debug.Log("nej");
+	//			toggleStreetLights.gameObject.SetActive(false);
+	//		}
+	//}
 }
