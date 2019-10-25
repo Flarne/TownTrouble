@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 796733646286760976}
   - component: {fileID: 796733646286760977}
   - component: {fileID: 796733646286760978}
+  - component: {fileID: 4367912570570755875}
   m_Layer: 0
   m_Name: LensPompole
   m_TagString: Untagged
@@ -558,18 +559,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
---- !u!114 &5296115669495778841
+--- !u!114 &4367912570570755875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048161620561420276}
-  m_Enabled: 1
+  m_GameObject: {fileID: 796733646286760988}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7581ea65721189548bf951bea45ededc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toggleStreetLights: {fileID: 1048161620561420276}
 --- !u!1 &1905077711099533621
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +584,7 @@ GameObject:
   - component: {fileID: 4530814229184006865}
   - component: {fileID: 3583363023866679492}
   - component: {fileID: 8174212476742268109}
+  - component: {fileID: 3906066470779040924}
   m_Layer: 0
   m_Name: LampHolder
   m_TagString: Untagged
@@ -664,6 +667,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &3906066470779040924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905077711099533621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7581ea65721189548bf951bea45ededc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleStreetLights: {fileID: 1048161620561420276}
 --- !u!1001 &2399025640531251397
 PrefabInstance:
   m_ObjectHideFlags: 0

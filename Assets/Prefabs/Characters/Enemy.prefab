@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6416708374795817054}
   - component: {fileID: 2235459909724614492}
   - component: {fileID: 6273079895388520686}
+  - component: {fileID: 7312954826443958872}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -154,6 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  minDamage: 0
+  maxDamage: 0
 --- !u!95 &6273079895388520686
 Animator:
   serializedVersion: 3
@@ -173,6 +176,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7312954826443958872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706110157794891453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23ab4fd2466a174abbf53b9554ecdbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoLoot: {fileID: 475465603413600413, guid: af3e7a7cbc5a5db4d8d5360794378c07, type: 3}
+  goldLoot: {fileID: 5967191550498693392, guid: 24ee4d0c4e3880a448ccbcb26906abcb,
+    type: 3}
 --- !u!1001 &4270362597723233024
 PrefabInstance:
   m_ObjectHideFlags: 0

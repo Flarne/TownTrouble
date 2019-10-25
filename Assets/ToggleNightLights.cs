@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class ToggleNightLights : MonoBehaviour
 {
-	public static Component toggleStreetLights;
-	//public DayAndNightCycle dayAndNightCycle;
+	public GameObject toggleStreetLights;
+	Transform result;
 
 	void Start()
 	{
-		toggleStreetLights = GetComponent<Component>();
-		//toggleStreetLights.SetActive(true);
+		toggleStreetLights = GameObject.Find("/LampHolder/RoadLight");
 	}
 
 	void Update()
@@ -18,22 +17,19 @@ public class ToggleNightLights : MonoBehaviour
 		NightOrDayLights();
 	}
 
-	public static void NightOrDayLights()
+	// This function checks every RoadLights in scene and turns off during day and turns on during night
+	public void NightOrDayLights()
 	{
-		//if (DayAndNightCycle.currentTimeOfDay <= 0.27f || DayAndNightCycle.currentTimeOfDay >= 0.73f)
-		//{
-		if (DayAndNightCycle.streetLightOnOff == true)
+		foreach (Transform lights in transform)
 		{
-			Debug.Log("ja");
-			toggleStreetLights.gameObject.SetActive(true);
-		}
-		//}
-		//else if (DayAndNightCycle.currentTimeOfDay > 0.27f || DayAndNightCycle.currentTimeOfDay < 0.73f)
-		//{
-		else if (DayAndNightCycle.streetLightOnOff == false)
-		{
-			Debug.Log("nej");
-			toggleStreetLights.gameObject.SetActive(false);
+			if (DayAndNightCycle.streetLightOnOff == true)
+			{
+				lights.gameObject.SetActive(true);
+			}
+			else if (DayAndNightCycle.streetLightOnOff == false)
+			{
+				lights.gameObject.SetActive(false);
+			}
 		}
 	}
 }

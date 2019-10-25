@@ -5,16 +5,16 @@ using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
-	[SerializeField] float playerDamage = 100f;
+	[SerializeField] public static int playerDamage = 100;
 
-	public TextMeshProUGUI healthText;
+	public static TextMeshProUGUI healthText;
 
 	private void Start()
 	{
 		healthText.text = playerDamage.ToString();
 	}
 
-	public void PlayerTakeDamage(float damageIn)
+	public void PlayerTakeDamage(int damageIn)
 	{
 		playerDamage -= damageIn;
 		healthText.text = playerDamage.ToString();
@@ -23,5 +23,16 @@ public class PlayerHealth : MonoBehaviour
 			DeathHandler deathHandler = GetComponent<DeathHandler>();
 			deathHandler.HandleDeath();
 		}
+	}
+
+	public void PlayerIncreaseHealth(int healthIn)
+	{
+		if (playerDamage > 200)
+		{
+			playerDamage = 200;
+			healthText.text = playerDamage.ToString();
+		}
+			playerDamage += healthIn;
+			healthText.text = playerDamage.ToString();
 	}
 }

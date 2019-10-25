@@ -5,9 +5,16 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+	Loot lootTarget;
+
 	[SerializeField] float hitpoints = 100f;
 
 	bool isDead = false;
+
+	private void Start()
+	{
+		lootTarget = FindObjectOfType<Loot>();
+	}
 
 	public bool IsDead()
 	{
@@ -31,6 +38,8 @@ public class EnemyHealth : MonoBehaviour
 		if (isDead) return;
 
 		isDead = true;
+		lootTarget.LootRandomizer();
 		GetComponent<Animator>().SetTrigger("die");
+		Destroy(gameObject, 3f);
 	}
 }
