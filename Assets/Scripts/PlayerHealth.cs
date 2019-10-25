@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
 {
 	[SerializeField] public static int playerDamage = 100;
 
-	public static TextMeshProUGUI healthText;
+	public TextMeshProUGUI healthText;
 
 	private void Start()
 	{

@@ -20,17 +20,16 @@ public class Loot : MonoBehaviour
 
 	public void LootRandomizer()
 	{
-		if (controlLootNumber < 50)
+		Debug.Log(controlLootNumber);
+		if (controlLootNumber >= 50 && controlLootNumber < 75)
 		{
-			return;
+			GameObject loot = Instantiate(ammoLoot, transform.position, transform.rotation);
+			Debug.Log(loot);
 		}
-		else if (controlLootNumber < 75)
+		else if (controlLootNumber >= 75 && controlLootNumber <= 100)
 		{
-			Instantiate(ammoLoot, transform.position, transform.rotation);
-		}
-		else
-		{
-			Instantiate(goldLoot, transform.position, transform.rotation);
+			GameObject loot = Instantiate(goldLoot, transform.position, transform.rotation);
+			Debug.Log(loot);
 		}
 
 	}

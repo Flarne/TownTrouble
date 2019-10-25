@@ -11,6 +11,6 @@ public class HealthText : MonoBehaviour
 
 	void Start()
 	{
-		PlayerHealth.healthText = GetComponent<TextMeshProUGUI>();
+		//PlayerHealth.healthText = GetComponent<TextMeshProUGUI>();
     }
 }

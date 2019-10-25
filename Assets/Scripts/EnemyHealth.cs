@@ -29,6 +29,7 @@ public class EnemyHealth : MonoBehaviour
 		hitpoints = hitpoints - damage;
 		if (hitpoints <= 0)
 		{
+			lootTarget.LootRandomizer();
 			Die();
 		}
 	}
@@ -38,7 +39,6 @@ public class EnemyHealth : MonoBehaviour
 		if (isDead) return;
 
 		isDead = true;
-		lootTarget.LootRandomizer();
 		GetComponent<Animator>().SetTrigger("die");
 		Destroy(gameObject, 3f);
 	}
