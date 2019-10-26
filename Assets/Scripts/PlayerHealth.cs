@@ -6,6 +6,7 @@ using TMPro;
 public class PlayerHealth : MonoBehaviour
 {
 	[SerializeField] public static int playerDamage = 100;
+	[SerializeField] public static int maxPlayerDamage = 200;
 
 	public TextMeshProUGUI healthText;
 
@@ -27,12 +28,17 @@ public class PlayerHealth : MonoBehaviour
 
 	public void PlayerIncreaseHealth(int healthIn)
 	{
+		playerDamage += healthIn;
+		healthText.text = playerDamage.ToString();
+
+		if (playerDamage >= 200)
+		{
+			healthText.text = playerDamage.ToString();
+		}
 		if (playerDamage > 200)
 		{
 			playerDamage = 200;
-			healthText.text = playerDamage.ToString();
+			healthText.text = maxPlayerDamage.ToString();
 		}
-			playerDamage += healthIn;
-			healthText.text = playerDamage.ToString();
 	}
 }

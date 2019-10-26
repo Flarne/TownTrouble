@@ -64,7 +64,6 @@ public class Weapon : MonoBehaviour
 			}
 			damage = UnityEngine.Random.Range(minDamage, maxDamage);
 			target.TakeDamage(damage); // Call a method from EnemyHealth That decrease health
-			Debug.Log(damage);
 		}
 		else
 		{

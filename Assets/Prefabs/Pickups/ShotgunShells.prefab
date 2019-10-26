@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1289930771934660735}
   - component: {fileID: 3017243989998879818}
   - component: {fileID: 7482865136435795846}
+  - component: {fileID: 2978967348849308650}
   m_Layer: 0
   m_Name: ShotgunShells
   m_TagString: Untagged
@@ -62,6 +63,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoAmount: 3
   ammoType: 1
+--- !u!114 &2978967348849308650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475465603413600413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23ab4fd2466a174abbf53b9554ecdbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoLoot: {fileID: 475465603413600413}
+  goldLoot: {fileID: 0}
 --- !u!1001 &623727421070969430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -128,11 +143,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 7098984212419007279, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1109838235655539478, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
         type: 3}
@@ -23093,6 +23103,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectedVertices.Array.data[623]
       value: 623
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098984212419007279, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7451561140791449574, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
         type: 3}
@@ -23174,11 +23189,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.6950002
       objectReference: {fileID: 0}
-    - target: {fileID: 7098984212419007279, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1109838235655539478, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
         type: 3}
       propertyPath: m_SelectedFaces.Array.size
@@ -46139,6 +46149,11 @@ PrefabInstance:
       propertyPath: m_SelectedVertices.Array.data[623]
       value: 623
       objectReference: {fileID: 0}
+    - target: {fileID: 7098984212419007279, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7451561140791449574, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
         type: 3}
       propertyPath: m_Mesh
@@ -46218,11 +46233,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7098984212419007279, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1109838235655539478, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
         type: 3}
@@ -69203,6 +69213,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectedVertices.Array.data[0]
       value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 7098984212419007279, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7451561140791449574, guid: 4f7628f44f6aafb40b7c9b01406b49d4,
         type: 3}

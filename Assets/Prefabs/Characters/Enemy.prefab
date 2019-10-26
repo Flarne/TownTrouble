@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212550c1d8661b14b9deb98476334130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 100
+  hitpoints: 75
 --- !u!114 &2235459909724614492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,8 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  minDamage: 0
-  maxDamage: 0
+  minDamage: 5
+  maxDamage: 15
 --- !u!95 &6273079895388520686
 Animator:
   serializedVersion: 3
@@ -188,9 +188,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23ab4fd2466a174abbf53b9554ecdbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoLoot: {fileID: 475465603413600413, guid: af3e7a7cbc5a5db4d8d5360794378c07, type: 3}
-  goldLoot: {fileID: 5967191550498693392, guid: 24ee4d0c4e3880a448ccbcb26906abcb,
-    type: 3}
+  lootList:
+  - {fileID: 6863065671387900164, guid: 93c383ce4c2ec3045a185d823fb1cb4e, type: 3}
+  - {fileID: 475465603413600413, guid: af3e7a7cbc5a5db4d8d5360794378c07, type: 3}
+  - {fileID: 5276563426099153088, guid: 9ff3aefbfec7ef747a09d24625e76e4f, type: 3}
+  - {fileID: 5967191550498693392, guid: 24ee4d0c4e3880a448ccbcb26906abcb, type: 3}
 --- !u!1001 &4270362597723233024
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-	Loot lootTarget;
+	private Loot getLoot;
 
 	[SerializeField] float hitpoints = 100f;
 
@@ -13,7 +13,7 @@ public class EnemyHealth : MonoBehaviour
 
 	private void Start()
 	{
-		lootTarget = FindObjectOfType<Loot>();
+		getLoot = GetComponent<Loot>();
 	}
 
 	public bool IsDead()
@@ -29,16 +29,26 @@ public class EnemyHealth : MonoBehaviour
 		hitpoints = hitpoints - damage;
 		if (hitpoints <= 0)
 		{
-			lootTarget.LootRandomizer();
+			LootDrop();
 			Die();
+		}
+	}
+
+	// gets funktion from Loot script when enemy is dead and return the right loot.
+	void LootDrop ()
+	{
+		if (hitpoints <= 0)
+		{
+			if (getLoot != null)
+			getLoot.LootRandomizer();
 		}
 	}
 
 	private void Die()
 	{
 		if (isDead) return;
-
 		isDead = true;
+
 		GetComponent<Animator>().SetTrigger("die");
 		Destroy(gameObject, 3f);
 	}

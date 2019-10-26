@@ -53,34 +53,13 @@ public class DayAndNightCycle : MonoBehaviour
 
 		sun.intensity = sunInitialIntensity * intensityMultiplier;
 		
-			if (intensityMultiplier == 1)
-			{
-				streetLightOnOff = false;
-				Debug.Log(streetLightOnOff + " av");
-			}
-			else if (intensityMultiplier < 1)
-			{
-				streetLightOnOff = true;
-				Debug.Log(streetLightOnOff + " på");
-			}
+		if (intensityMultiplier == 1)
+		{
+			streetLightOnOff = false;
+		}
+		else if (intensityMultiplier < 1)
+		{
+			streetLightOnOff = true;
+		}
 	}
-
-	//public void NightOrDayLights()
-	//{
-	//		//if (DayAndNightCycle.currentTimeOfDay <= 0.27f || DayAndNightCycle.currentTimeOfDay >= 0.73f)
-	//		//{
-	//		if (streetLightOnOff == true)
-	//		{
-	//			Debug.Log("ja");
-	//			toggleStreetLights.gameObject.SetActive(true);
-	//		}
-	//		//}
-	//		//else if (DayAndNightCycle.currentTimeOfDay > 0.27f || DayAndNightCycle.currentTimeOfDay < 0.73f)
-	//		//{
-	//		else if (streetLightOnOff == false)
-	//		{
-	//			Debug.Log("nej");
-	//			toggleStreetLights.gameObject.SetActive(false);
-	//		}
-	//}
 }

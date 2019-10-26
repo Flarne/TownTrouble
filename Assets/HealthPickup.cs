@@ -24,6 +24,7 @@ public class HealthPickup : MonoBehaviour
 		{
 			if (PlayerHealth.playerDamage >= 200)
 			{
+				PlayerHealth.playerDamage = 200;
 				return;
 			}
 			target.PlayerIncreaseHealth(bigMedPac);
