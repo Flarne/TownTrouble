@@ -7,7 +7,7 @@ using TMPro;
 
 public class WeaponSwitcher : MonoBehaviour
 {
-	[SerializeField] int currentWeapon = 0;
+	[SerializeField] public int currentWeapon = 0;
 	[SerializeField] Ammo ammoSlot;
 	[SerializeField] AmmoType ammoType;
 
@@ -32,10 +32,11 @@ public class WeaponSwitcher : MonoBehaviour
 		if (previousWeapon != currentWeapon)
 		{
 			SetActiveWeapon();
+			Debug.Log("Testar om setactiveweapon updateras rätt " + currentWeapon);
 		}
 	}
 
-	private void ProcessKeyboardInput()
+	public void ProcessKeyboardInput()
 	{
 		if (Input.GetKeyDown(KeyCode.Alpha1))
 		{
@@ -53,9 +54,10 @@ public class WeaponSwitcher : MonoBehaviour
 		{
 			return;
 		}
+		amountAmmunitionText.text = ammoSlot.CurrentAmountAmmo(ammoType).ToString();
 	}
 
-	private void ProcessScrollWheelInput()
+	public void ProcessScrollWheelInput()
 	{
 		if (Input.GetAxis("Mouse ScrollWheel") < 0)
 		{
@@ -82,7 +84,7 @@ public class WeaponSwitcher : MonoBehaviour
 		}
 	}
 
-	private void SetActiveWeapon()
+	public void SetActiveWeapon()
 	{
 		int weaponIndex = 0;
 
@@ -98,6 +100,7 @@ public class WeaponSwitcher : MonoBehaviour
 				else if (weaponIndex != currentWeapon)
 				{
 					weapon.gameObject.SetActive(false);
+					amountAmmunitionText.text = ammoSlot.CurrentAmountAmmo(ammoType).ToString();
 				}
 				weaponIndex++;
 			}

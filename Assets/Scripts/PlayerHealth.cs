@@ -9,16 +9,17 @@ public class PlayerHealth : MonoBehaviour
 	[SerializeField] public static int maxPlayerDamage = 200;
 
 	public TextMeshProUGUI healthText;
+	public string maxHP = "/200";
 
 	private void Start()
 	{
-		healthText.text = playerDamage.ToString();
+		healthText.text = playerDamage.ToString() + maxHP;
 	}
 
 	public void PlayerTakeDamage(int damageIn)
 	{
 		playerDamage -= damageIn;
-		healthText.text = playerDamage.ToString();
+		healthText.text = playerDamage.ToString() + maxHP;
 		if (playerDamage <= 0)
 		{
 			DeathHandler deathHandler = GetComponent<DeathHandler>();
@@ -29,16 +30,16 @@ public class PlayerHealth : MonoBehaviour
 	public void PlayerIncreaseHealth(int healthIn)
 	{
 		playerDamage += healthIn;
-		healthText.text = playerDamage.ToString();
+		healthText.text = playerDamage.ToString() + maxHP;
 
 		if (playerDamage >= 200)
 		{
-			healthText.text = playerDamage.ToString();
+			healthText.text = playerDamage.ToString() + maxHP;
 		}
 		if (playerDamage > 200)
 		{
 			playerDamage = 200;
-			healthText.text = maxPlayerDamage.ToString();
+			healthText.text = maxPlayerDamage.ToString() + maxHP;
 		}
 	}
 }

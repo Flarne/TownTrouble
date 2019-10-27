@@ -28,6 +28,7 @@ public class Weapon : MonoBehaviour
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
+			
 			shootTimer = timeBetweenShoots;
 			StartCoroutine(Shoot());
 		}

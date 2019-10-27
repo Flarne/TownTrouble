@@ -6,7 +6,7 @@ public class DayAndNightCycle : MonoBehaviour
 {
 
 	public Light sun;
-	public float secondsInFullDay = 10f;
+	public float secondsInFullDay = 120f;
 	[Range(0, 1)]
 	public static float currentTimeOfDay = 0;
 	[HideInInspector]

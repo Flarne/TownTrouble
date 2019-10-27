@@ -37,11 +37,13 @@ public class EnemyAI : MonoBehaviour
 		// If Zombie is provoked he starts to chase you or else when you get to close to the zombie
 		distanceToTarget = Vector3.Distance(target.position, transform.position);
 
-		if (isProvoked)
+		// Zombie attacks only during night time and is spawned. In daytime player can run around 
+		// and don't have alot of zombies chasing player when it is dark again.
+		if (isProvoked && DayAndNightCycle.streetLightOnOff == true)
 		{
 			EngageTarget();
 		}
-		else if (distanceToTarget <= chaseRange)
+		else if (distanceToTarget <= chaseRange && DayAndNightCycle.streetLightOnOff == true)
 		{
 			isProvoked = true;
 		}
@@ -69,9 +71,18 @@ public class EnemyAI : MonoBehaviour
 	private void ChaseTarget()
 	{
 		if (isDead) return;
-		GetComponent<Animator>().SetBool("attack", false);
-		GetComponent<Animator>().SetTrigger("move");
-		navMeshAgent.SetDestination(target.position);
+
+		if (DayAndNightCycle.streetLightOnOff == true)
+		{
+			GetComponent<Animator>().SetBool("attack", false);
+			GetComponent<Animator>().SetTrigger("move");
+			navMeshAgent.SetDestination(target.position);
+		}
+		else if (DayAndNightCycle.streetLightOnOff == false)
+		{
+			GetComponent<Animator>().SetTrigger("idle");
+		}
+		
 	}
 
 	// When zombie is close enough animation starts to hit you

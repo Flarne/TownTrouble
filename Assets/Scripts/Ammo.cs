@@ -8,7 +8,7 @@ public class Ammo : MonoBehaviour
 {
 	[SerializeField] AmmoSlot[] ammoSlots;
 	
-		public TextMeshProUGUI amountAmmunitionText;
+	public TextMeshProUGUI amountAmmunitionText;
 
 	[System.Serializable]
 	private class AmmoSlot
