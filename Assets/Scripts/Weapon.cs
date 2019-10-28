@@ -52,6 +52,8 @@ public class Weapon : MonoBehaviour
 		muzzleFX.Play();
 	}
 
+	public AmmoType GetAmmoType() => ammoType;
+
 	private void ProcessRaycast()
 	{
 		RaycastHit hit;

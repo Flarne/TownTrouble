@@ -54,7 +54,7 @@ public class WeaponSwitcher : MonoBehaviour
 		{
 			return;
 		}
-		amountAmmunitionText.text = ammoSlot.CurrentAmountAmmo(ammoType).ToString();
+		//amountAmmunitionText.text = ammoSlot.CurrentAmountAmmo(ammoType).ToString();
 	}
 
 	public void ProcessScrollWheelInput()
@@ -96,11 +96,11 @@ public class WeaponSwitcher : MonoBehaviour
 				{
 					weapon.gameObject.SetActive(true);
 					shootTimer = Weapon.shootTimer;
+					amountAmmunitionText.text = ammoSlot.CurrentAmountAmmo(weapon.GetComponent<Weapon>().GetAmmoType()).ToString();
 				}
 				else if (weaponIndex != currentWeapon)
 				{
 					weapon.gameObject.SetActive(false);
-					amountAmmunitionText.text = ammoSlot.CurrentAmountAmmo(ammoType).ToString();
 				}
 				weaponIndex++;
 			}
