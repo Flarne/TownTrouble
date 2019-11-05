@@ -316,7 +316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1c32aba9f1c0f4a9f8117ed337664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDamage: 100
+  healthText: {fileID: 0}
+  maxHP: /200
 --- !u!114 &3833006976240692402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,6 +350,7 @@ MonoBehaviour:
     ammoAmount: 10
   - ammotype: 2
     ammoAmount: 20
+  amountAmmunitionText: {fileID: 0}
 --- !u!108 &1882099823678462736
 Light:
   m_ObjectHideFlags: 0
@@ -394,7 +396,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295

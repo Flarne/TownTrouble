@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DayAndNightCycle : MonoBehaviour
 {
-
 	public Light sun;
 	public float secondsInFullDay = 120f;
 	[Range(0, 1)]

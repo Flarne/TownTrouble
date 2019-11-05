@@ -32,7 +32,6 @@ public class WeaponSwitcher : MonoBehaviour
 		if (previousWeapon != currentWeapon)
 		{
 			SetActiveWeapon();
-			Debug.Log("Testar om setactiveweapon updateras rätt " + currentWeapon);
 		}
 	}
 
@@ -54,7 +53,6 @@ public class WeaponSwitcher : MonoBehaviour
 		{
 			return;
 		}
-		//amountAmmunitionText.text = ammoSlot.CurrentAmountAmmo(ammoType).ToString();
 	}
 
 	public void ProcessScrollWheelInput()
