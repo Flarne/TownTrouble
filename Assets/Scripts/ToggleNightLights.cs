@@ -9,7 +9,7 @@ public class ToggleNightLights : MonoBehaviour
 
 	void Start()
 	{
-		toggleStreetLights = GameObject.Find("/LampHolder/RoadLight");
+		toggleStreetLights = GameObject.Find("/RoadLight");
 	}
 
 	void Update()
