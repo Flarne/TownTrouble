@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1938666517652661693}
   - component: {fileID: 575757574725335316}
   - component: {fileID: 6553504857292006849}
+  - component: {fileID: 6975249195355923853}
   m_Layer: 0
   m_Name: Fence-pole_Left_2
   m_TagString: Untagged
@@ -78,6 +79,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6975249195355923853
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600419215887292768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 800555742613843069, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &681640480856900129
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +104,7 @@ GameObject:
   - component: {fileID: 3141993950736502015}
   - component: {fileID: 6150648024910378688}
   - component: {fileID: 2041811383094781482}
+  - component: {fileID: 1680833732902241291}
   m_Layer: 0
   m_Name: Plank_2.004
   m_TagString: Untagged
@@ -156,6 +172,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1680833732902241291
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681640480856900129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7568533383009684193, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &1183060955613605070
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +197,7 @@ GameObject:
   - component: {fileID: 4814288859007859120}
   - component: {fileID: 6482869692186283956}
   - component: {fileID: 903140458393269453}
+  - component: {fileID: 1801583807877742133}
   m_Layer: 0
   m_Name: Plank_1.002
   m_TagString: Untagged
@@ -234,6 +265,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1801583807877742133
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183060955613605070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -2253955368452075381, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &1924130386585425435
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +290,7 @@ GameObject:
   - component: {fileID: 6046439295029420035}
   - component: {fileID: 1472786978436926504}
   - component: {fileID: 4098170708764268799}
+  - component: {fileID: 4994772866590165363}
   m_Layer: 0
   m_Name: Plank_3.005
   m_TagString: Untagged
@@ -313,6 +359,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4994772866590165363
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924130386585425435}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -5777875388737587399, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &2159513042733668666
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +384,7 @@ GameObject:
   - component: {fileID: 5678815803230209891}
   - component: {fileID: 7447593431627446121}
   - component: {fileID: 1644077550663658874}
+  - component: {fileID: 604257061364422387}
   m_Layer: 0
   m_Name: Fence-pole_Right_2
   m_TagString: Untagged
@@ -391,6 +452,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &604257061364422387
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2159513042733668666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -3325317732865089651, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &2249813083959390901
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +477,7 @@ GameObject:
   - component: {fileID: 5041013214660056472}
   - component: {fileID: 511474903911102792}
   - component: {fileID: 5225663295630767895}
+  - component: {fileID: 1145964773711318038}
   m_Layer: 0
   m_Name: Plank_2.003
   m_TagString: Untagged
@@ -469,6 +545,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1145964773711318038
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2249813083959390901}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 66942635123000325, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &4180401345437509042
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +570,7 @@ GameObject:
   - component: {fileID: 8373517131022230745}
   - component: {fileID: 6841607323931917093}
   - component: {fileID: 2995305362647851988}
+  - component: {fileID: 7925518900304381620}
   m_Layer: 0
   m_Name: Fence-pole_Grind_Right
   m_TagString: Untagged
@@ -547,6 +638,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7925518900304381620
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180401345437509042}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 3528001664377858127, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &4248051888241200713
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914025629024631898}
   - component: {fileID: 6920382606868538235}
+  - component: {fileID: 3989713914206457768}
   m_Layer: 0
   m_Name: Grind
   m_TagString: Untagged
@@ -598,6 +704,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!64 &3989713914206457768
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4248051888241200713}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1 &4346889215383951290
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,6 +729,7 @@ GameObject:
   - component: {fileID: 3877358441053780388}
   - component: {fileID: 7304013510184446175}
   - component: {fileID: 7572726956009201224}
+  - component: {fileID: 8562041992106009836}
   m_Layer: 0
   m_Name: Fence_Grind_Right
   m_TagString: Untagged
@@ -680,6 +801,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8562041992106009836
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4346889215383951290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -9178724150098075835, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &4959427239837283987
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +826,7 @@ GameObject:
   - component: {fileID: 900391793219565939}
   - component: {fileID: 4088571997485241192}
   - component: {fileID: 6893420921651127624}
+  - component: {fileID: 4332544832872876670}
   m_Layer: 0
   m_Name: Plank_2.006
   m_TagString: Untagged
@@ -759,6 +895,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4332544832872876670
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4959427239837283987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 5031919497479832721, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &5571367816002226385
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +920,7 @@ GameObject:
   - component: {fileID: 8290170111399292135}
   - component: {fileID: 3816624981766788594}
   - component: {fileID: 3336351236181007120}
+  - component: {fileID: 5914181411303743200}
   m_Layer: 0
   m_Name: Plank_2.002
   m_TagString: Untagged
@@ -837,6 +988,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5914181411303743200
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5571367816002226385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -1113764842693897857, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &6359521004240567001
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +1013,7 @@ GameObject:
   - component: {fileID: 5119616421024677931}
   - component: {fileID: 6950502738314368486}
   - component: {fileID: 1163479724921073023}
+  - component: {fileID: 3317785312441677374}
   m_Layer: 0
   m_Name: Plank_3.004
   m_TagString: Untagged
@@ -915,6 +1081,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3317785312441677374
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6359521004240567001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 367890758411718738, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &7387500622864601043
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +1106,7 @@ GameObject:
   - component: {fileID: 4849659200815965661}
   - component: {fileID: 3085050269626113133}
   - component: {fileID: 7867813464309312268}
+  - component: {fileID: 6326449872435862904}
   m_Layer: 0
   m_Name: Plank_4.002
   m_TagString: Untagged
@@ -993,6 +1174,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6326449872435862904
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7387500622864601043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -4570285027009618972, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &8057548502559092369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,6 +1199,7 @@ GameObject:
   - component: {fileID: 2274204839338617284}
   - component: {fileID: 4746212324523393321}
   - component: {fileID: 3004990687544242930}
+  - component: {fileID: 6716038835635114544}
   m_Layer: 0
   m_Name: Plank_3.002
   m_TagString: Untagged
@@ -1071,6 +1267,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6716038835635114544
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8057548502559092369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -7229045679379503354, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &8660027270387256428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,6 +1292,7 @@ GameObject:
   - component: {fileID: 3417633613097200971}
   - component: {fileID: 4239382094831502716}
   - component: {fileID: 1823201782807337041}
+  - component: {fileID: 8924793608400305990}
   m_Layer: 0
   m_Name: Fence-pole_Grind_Left
   m_TagString: Untagged
@@ -1149,6 +1360,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8924793608400305990
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8660027270387256428}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 1119660779252423043, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &8693340911383678643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,6 +1385,7 @@ GameObject:
   - component: {fileID: 4767092370919679091}
   - component: {fileID: 3582794482039155400}
   - component: {fileID: 5402851449992727043}
+  - component: {fileID: 7831842121053620971}
   m_Layer: 0
   m_Name: Plank_3.003
   m_TagString: Untagged
@@ -1227,6 +1453,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7831842121053620971
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8693340911383678643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 759155560295455826, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &8881270576010408130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1478,7 @@ GameObject:
   - component: {fileID: 5010022165453771723}
   - component: {fileID: 986683900026422840}
   - component: {fileID: 7971892266753677230}
+  - component: {fileID: 1144444546531415740}
   m_Layer: 0
   m_Name: Fence_Grind_Left
   m_TagString: Untagged
@@ -1311,6 +1552,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1144444546531415740
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8881270576010408130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 7452637594678834439, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &8932132283590077220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,6 +1577,7 @@ GameObject:
   - component: {fileID: 8775421110676163412}
   - component: {fileID: 2331200802290269357}
   - component: {fileID: 788280999155925599}
+  - component: {fileID: 2117877781442166689}
   m_Layer: 0
   m_Name: Plank_2.005
   m_TagString: Untagged
@@ -1390,6 +1646,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2117877781442166689
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932132283590077220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -1835034810373952399, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
 --- !u!1 &9083288057509486815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,6 +1671,7 @@ GameObject:
   - component: {fileID: 6528675796422084219}
   - component: {fileID: 9023196506023816014}
   - component: {fileID: 3438527362482118012}
+  - component: {fileID: 3911324565273786420}
   m_Layer: 0
   m_Name: Plank_2.007
   m_TagString: Untagged
@@ -1468,3 +1739,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3911324565273786420
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9083288057509486815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -6590293482900273437, guid: 46f571c67f9e3e0468ff854998e4f6a6, type: 3}
