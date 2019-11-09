@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7050051700047717344
 Transform:
@@ -5637,6 +5637,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Entrance Arch
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177883798855615814, guid: 70d1dbb80c821624a91560c6355a1a96,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4061360212625327441, guid: 70d1dbb80c821624a91560c6355a1a96,
         type: 3}

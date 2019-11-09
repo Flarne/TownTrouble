@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7713557325168854471
 Transform:
@@ -1106,7 +1106,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &344462314243436380
 Transform:
@@ -2087,7 +2087,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2390093875475598606
 Transform:
@@ -2410,6 +2410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PillarPrefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009030335814770027, guid: cd740a1c0e9f67645a129123c1a85c89,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1735627093924483546, guid: cd740a1c0e9f67645a129123c1a85c89,
         type: 3}
@@ -2886,6 +2891,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PillarPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7009030335814770027, guid: cd740a1c0e9f67645a129123c1a85c89,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1735627093924483546, guid: cd740a1c0e9f67645a129123c1a85c89,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3360,6 +3370,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PillarPrefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009030335814770027, guid: cd740a1c0e9f67645a129123c1a85c89,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1735627093924483546, guid: cd740a1c0e9f67645a129123c1a85c89,
         type: 3}
@@ -3841,6 +3856,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PillarPrefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7009030335814770027, guid: cd740a1c0e9f67645a129123c1a85c89,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1735627093924483546, guid: cd740a1c0e9f67645a129123c1a85c89,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4321,6 +4341,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plank 5m
       objectReference: {fileID: 0}
+    - target: {fileID: 3384246322242648630, guid: 98b37d646a0ba2c4e9657c4a8e04eca9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 169367440900957219, guid: 98b37d646a0ba2c4e9657c4a8e04eca9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4376,12 +4401,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3385178361024805309, guid: 98b37d646a0ba2c4e9657c4a8e04eca9,
+    - target: {fileID: 5987607572839559490, guid: 98b37d646a0ba2c4e9657c4a8e04eca9,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 5987607572839559490, guid: 98b37d646a0ba2c4e9657c4a8e04eca9,
+    - target: {fileID: 3385178361024805309, guid: 98b37d646a0ba2c4e9657c4a8e04eca9,
         type: 3}
       propertyPath: m_Mesh
       value: 
