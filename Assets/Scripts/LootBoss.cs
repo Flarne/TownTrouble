@@ -6,7 +6,7 @@ public class LootBoss : MonoBehaviour
 {
 	[SerializeField] GameObject[] bossLoot;
 
-	private Transform enemyPosition;
+	Transform enemyPosition;
 
 	private int lootItemNumber;
 
@@ -20,8 +20,7 @@ public class LootBoss : MonoBehaviour
 		if (gameObject.tag == "Bockstensmannen")
 		{
 			lootItemNumber = 0;
-			//Instantiate(bossLoot[lootItemNumber], enemyPosition.position, Quaternion.identity);
-			Instantiate(bossLoot[lootItemNumber], enemyPosition.position, Quaternion.Euler(-90f, 90f, 0.0f));
+			Instantiate(bossLoot[lootItemNumber], enemyPosition.position, Quaternion.identity);
 		}
 	}
 }

@@ -6,14 +6,19 @@ using UnityEngine;
 public class OpenGate : MonoBehaviour
 {
 	[SerializeField] Animator openGate;
+	//[SerializeField] Animator openGateRight;
 
 	public bool enter = true;
+	//public bool enterRight = true;
 	public bool exit = true;
 	float smooth = 5.0f;
 
 	private void Start()
 	{
+		openGate = GetComponent<Animator>();
+		//openGateRight = GetComponent<Animator>();
 		openGate.enabled = false;
+		//openGateRight.enabled = false;
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -22,18 +27,29 @@ public class OpenGate : MonoBehaviour
 		{
 			openGate.enabled = true;
 			Debug.Log("entered");
-			GetComponent<Animator>().SetTrigger("opening");
-			GetComponent<Animator>().SetBool("idleClosed", false);
-			GetComponent<Animator>().SetBool("idleOpened", true);
+			openGate.SetBool("opening", true);
+			openGate.SetBool("opened", true);
 		}
+
+		//if (enterRight)
+		//{
+		//	openGateRight.enabled = true;
+		//	Debug.Log("entered Right");
+		//	openGateRight.SetBool("openingRight", true);
+		//	openGateRight.SetBool("openedRight", true);
+		//}
 	}
+
+			//animator.enabled = true;
+			//animator.SetBool("open", true);
+			//animator.SetBool("opened", true);
 
 	private void OnTriggerExit(Collider other)
 	{
 		if (exit)
 		{
 			Debug.Log("Exited");
-			openGate.enabled = false;
+			//openGate.enabled = false;
 		}
 	}
 }

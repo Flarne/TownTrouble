@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7242826362439423463}
   - component: {fileID: 8236131246013766751}
   - component: {fileID: 9099472700344337738}
-  - component: {fileID: 8509417425558468244}
   - component: {fileID: 4643395852287760891}
   m_Layer: 0
   m_Name: Chest_Lid
@@ -27,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146488376317946918}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.70710677}
-  m_LocalPosition: {x: 0.24111329, y: -0.0024517179, z: 0.38962933}
-  m_LocalScale: {x: 0.96000004, y: 1, z: 1}
+  m_LocalRotation: {x: 0.000000119209275, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.013423664, y: -0.019370584, z: -0.011548279}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 582743726862504192}
-  m_Father: {fileID: 1704385530968376905}
-  m_RootOrder: 1
+  m_Father: {fileID: 2567337192451283177}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 0}
 --- !u!33 &8236131246013766751
 MeshFilter:
@@ -81,20 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8509417425558468244
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146488376317946918}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 2356492703377905092, guid: 8022b4fc789a8344194670f306819d03, type: 3}
 --- !u!114 &4643395852287760891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +92,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8453982da7d96c14a8a6e018053de1b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 3119474328174471478}
+  animator: {fileID: 0}
+--- !u!1 &1825793580297679924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2567337192451283177}
+  - component: {fileID: 4823127117075552661}
+  - component: {fileID: 2883114672577681389}
+  - component: {fileID: 2978400867992918138}
+  m_Layer: 0
+  m_Name: Lid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2567337192451283177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825793580297679924}
+  m_LocalRotation: {x: 0.6114146, y: 0.35520735, z: -0.35520735, w: 0.6114146}
+  m_LocalPosition: {x: 0.254, y: -0.02, z: 0.409}
+  m_LocalScale: {x: 0.96000004, y: 1.0000002, z: 1.0000002}
+  m_Children:
+  - {fileID: 7242826362439423463}
+  m_Father: {fileID: 1704385530968376905}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: -60.31}
+--- !u!114 &4823127117075552661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825793580297679924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8453982da7d96c14a8a6e018053de1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2978400867992918138}
+--- !u!135 &2883114672577681389
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825793580297679924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0.41}
+--- !u!95 &2978400867992918138
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825793580297679924}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fcc05ca5374f444478b6e8ea0c20387f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2448946942310970458
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,10 +183,8 @@ GameObject:
   - component: {fileID: 1704385530968376905}
   - component: {fileID: 7709097286208371839}
   - component: {fileID: 4161535274010755206}
-  - component: {fileID: 437273187289661048}
   - component: {fileID: 6937065852504281842}
-  - component: {fileID: 8034624732281610618}
-  - component: {fileID: 3119474328174471478}
+  - component: {fileID: 3338018645425501813}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -142,7 +204,7 @@ Transform:
   m_LocalScale: {x: 1.0416666, y: 1, z: 1}
   m_Children:
   - {fileID: 5240387360898695490}
-  - {fileID: 7242826362439423463}
+  - {fileID: 2567337192451283177}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -192,20 +254,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &437273187289661048
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2448946942310970458}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -69760931014144829, guid: 8022b4fc789a8344194670f306819d03, type: 3}
 --- !u!65 &6937065852504281842
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -214,43 +262,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2448946942310970458}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0.44}
---- !u!114 &8034624732281610618
-MonoBehaviour:
+  m_Size: {x: 0.52, y: 0.85, z: 0.64}
+  m_Center: {x: 0, y: 0, z: 0.33}
+--- !u!135 &3338018645425501813
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2448946942310970458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8453982da7d96c14a8a6e018053de1b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 3119474328174471478}
---- !u!95 &3119474328174471478
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2448946942310970458}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae0f4a0966346c84e895d78c17872cc9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.7
+  m_Center: {x: 0, y: 0, z: 0.41}
 --- !u!1 &5469157932473664657
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +291,6 @@ GameObject:
   - component: {fileID: 5240387360898695490}
   - component: {fileID: 7076142739144866447}
   - component: {fileID: 4088429210937568865}
-  - component: {fileID: 5133296956654828700}
   m_Layer: 0
   m_Name: Chest_Iron
   m_TagString: Untagged
@@ -330,20 +358,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &5133296956654828700
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5469157932473664657}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -6810567553271267084, guid: 8022b4fc789a8344194670f306819d03, type: 3}
 --- !u!1 &8782752739453345010
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +369,6 @@ GameObject:
   - component: {fileID: 582743726862504192}
   - component: {fileID: 737201262891946371}
   - component: {fileID: 7412755649019830855}
-  - component: {fileID: 7020657968081159764}
   m_Layer: 0
   m_Name: Chest_Iron_Lid
   m_TagString: Untagged
@@ -370,9 +383,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8782752739453345010}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.0000000012574723, z: 4.656613e-10}
-  m_LocalScale: {x: 1.0022035, y: 1.0022035, z: 1.0022035}
+  m_LocalRotation: {x: -1.4210851e-14, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0022035, y: 1.0022045, z: 1.0022045}
   m_Children: []
   m_Father: {fileID: 7242826362439423463}
   m_RootOrder: 0
@@ -423,17 +436,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7020657968081159764
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8782752739453345010}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4089997046978386672, guid: 8022b4fc789a8344194670f306819d03, type: 3}
