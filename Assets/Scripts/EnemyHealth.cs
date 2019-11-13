@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
 	private Loot getLoot;
+	private LootBoss getLootBoss;
 
 	[SerializeField] float hitpoints = 100f;
 
@@ -14,6 +15,7 @@ public class EnemyHealth : MonoBehaviour
 	private void Start()
 	{
 		getLoot = GetComponent<Loot>();
+		getLootBoss = GetComponent<LootBoss>();
 	}
 
 	public bool IsDead()
@@ -40,7 +42,14 @@ public class EnemyHealth : MonoBehaviour
 		if (hitpoints <= 0)
 		{
 			if (getLoot != null)
-			getLoot.LootRandomizer();
+			{
+				getLoot.LootRandomizer();
+			}
+			
+			if (getLootBoss != null)
+			{
+				getLootBoss.BossLoot();
+			}
 		}
 	}
 

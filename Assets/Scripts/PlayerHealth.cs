@@ -5,7 +5,7 @@ using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
-	[SerializeField] public static int playerDamage = 100;
+	[SerializeField] public static int playerDamage = 200;
 	[SerializeField] public static int maxPlayerDamage = 200;
 
 	public TextMeshProUGUI healthText;
