@@ -9,10 +9,8 @@ public class OpenGate : MonoBehaviour
 
 	public bool enter = true;
 	bool isAnimating = false;
-	//public bool enterRight = true;
 	public bool exit = true;
 	public float gateTime;
-	float smooth = 5.0f;
 
 	private void Start()
 	{
@@ -42,87 +40,29 @@ public class OpenGate : MonoBehaviour
 		}
 	}
 
-	public IEnumerator toggleOnOffAnimator()
-	{
-		yield return new WaitForSeconds(4f);
-		openGate.enabled = false;
-	}
-
 	private void OnTriggerEnter(Collider other)
 	{
 		gateTime = 0f;
-		//if (enter && isAnimating && gateTime >= 0 || gateTime <= 5)
-		if (enter && gateTime <= 10f && !isAnimating)
+		if (enter && gateTime <= 10f && !isAnimating && other.gameObject.tag == "Player")
 		{
 			openGate.enabled = true;
-			//isAnimating = true;
 			openGate.SetTrigger("openingTriggerRight");
+			openGate.SetTrigger("openingTrigger");
 			openGate.SetBool("openedRight", true);
-			//openGate.SetBool("closing", false);
-			//openGate.SetBool("closingRight", false);
-			//openGate.SetBool("opening", true);
-			//openGate.SetBool("opened", true);
-			//openGate.SetBool("openingRight", true);
-
-			//if (gateTime <= 5f && isAnimating)
-			//{
-			//	return;
-			//}
-			//else if (gateTime > 5f)
-			//{
-			//	Debug.Log(isAnimating);
-			//}
-
-			//else if (!isAnimating && gateTime > 5f)
-			//{
-			//	gateTime = 0f;
-			//	isAnimating = true;
-			//	openGate.enabled = false;
-			//}
+			openGate.SetBool("opened", true);
 		}
-
-		//if (enterRight)
-		//{
-		//	openGate.enabled = true;
-		//	Debug.Log("entered Right");
-		//	openGate.SetBool("openingRight", true);
-		//	openGate.SetBool("openedRight", true);
-		//}
 	}
 
 	private void OnTriggerExit(Collider other)
 	{
-		//if (exit && gateTime >= 0 || gateTime <= 5)
-		if (exit && gateTime <= 10f && !isAnimating)
+		if (exit && gateTime <= 10f && !isAnimating && other.gameObject.tag == "Player")
 		{
 			gateTime = 0f;
 			openGate.enabled = true;
-			//isAnimating = true;
 			openGate.SetTrigger("closingTriggerRight");
+			openGate.SetTrigger("closingTrigger");
 			openGate.SetBool("closedRight", true);
-			//openGate.SetBool("closingRight", true);
-			//openGate.SetBool("openedRight", false);
-			//openGate.SetBool("openingRight", false);
-			//openGate.SetBool("closing", true);
-			//openGate.SetBool("closed", true);
-			//openGate.SetBool("opening", false);
-
-			//if (gateTime <= 5f && isAnimating)
-			//{
-			//	return;
-			//}
-			//else if (gateTime > 5f)
-			//{
-			//	isAnimating = false;
-			//	Debug.Log(isAnimating);
-			//}
-			//else if (!isAnimating && gateTime > 5f)
-			//{
-			//	gateTime = 0f;
-			//	isAnimating = true;
-			//	//openGate.enabled = false;
-			//}
-			//StartCoroutine(toggleOnOffAnimator());
+			openGate.SetBool("closed", true);
 		}
 	}
 }
